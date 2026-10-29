@@ -1,0 +1,26 @@
+[project]
+name = "epita-raju-sekar-space"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Raju", email = "raju.vishwalabs@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "rich>=15.0.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[project.scripts]
+epita-raju-sekar-cli = "epita_raju_sekar_space.cli:main"
